@@ -1,5 +1,5 @@
 import React from 'react';
-import TestRenderer from 'react-test-renderer';
+import TestRenderer, { ReactTestRendererJSON } from 'react-test-renderer';
 
 import MarkdownView, {
   MarkdownViewProps,
@@ -17,7 +17,8 @@ describe('MarkdownView', () => {
     const testRenderer = TestRenderer.create(
       <MarkdownView dangerouslySetInnerHTML {...props} />
     );
-    const html = testRenderer.toJSON()!.props.dangerouslySetInnerHTML.__html;
+    const html = (testRenderer.toJSON() as ReactTestRendererJSON).props
+      .dangerouslySetInnerHTML.__html;
     return html;
   };
 
