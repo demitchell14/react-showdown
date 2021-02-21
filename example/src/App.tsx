@@ -43,16 +43,33 @@ Hello &Uuml;laute! ;)
 |h1|h2|h3|
 |:--|:--:|--:|
 |*foo*|**bar**|baz|
+
+<!@1234>
 `;
+
+  const testExtension = {
+    type: 'lang',
+    regex: /<!@\d+>/gim,
+    replace: (matched) => {
+      return `<TestComponent name="${matched}" />`;
+    }
+  }
 
   return (
     <MarkdownView
+      extensions={[testExtension]}
       markdown={markdown}
       options={{ tables: true, emoji: true }}
-      components={{ InlineComponent }}
+      components={{ InlineComponent, TestComponent }}
     />
   );
 };
+
+function TestComponent({ name }) {
+  return (
+      <span>I'm {name}</span>
+  )
+}
 
 function InlineComponent() {
   return (
