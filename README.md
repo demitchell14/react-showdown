@@ -100,9 +100,9 @@ the html parser [htmlparser2](https://github.com/fb55/htmlparser2/).
 * [commonmark-react-renderer](https://github.com/rexxars/commonmark-react-renderer), based on
   [commonmark.js](https://github.com/jgm/commonmark.js)
 
-[travis-image]: https://img.shields.io/travis/jerolimov/react-showdown/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/jerolimov/react-showdown
-[coveralls-image]: https://img.shields.io/coveralls/jerolimov/react-showdown/master.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/jerolimov/react-showdown
-[dependency-image]: http://img.shields.io/david/jerolimov/react-showdown.svg?style=flat-square
-[dependency-url]: https://david-dm.org/jerolimov/react-showdown
+[travis-image]: https://img.shields.io/travis/demitchell14/react-showdown/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/demitchell14/react-showdown
+[coveralls-image]: https://img.shields.io/coveralls/demitchell14/react-showdown/master.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/demitchell14/react-showdown
+[dependency-image]: http://img.shields.io/david/demitchell14/react-showdown.svg?style=flat-square
+[dependency-url]: https://david-dm.org/demitchell14/react-showdown

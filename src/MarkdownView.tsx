@@ -133,7 +133,7 @@ export default function MarkdownView(props: MarkdownViewProps): ReactElement {
     return <div dangerouslySetInnerHTML={{ __html: html }} />;
   }
 
-  const root = htmlparser.parseDOM(html, {
+  const root = htmlparser.parseDocument(html, {
     // Don't change the case of parsed html tags to match inline components.
     lowerCaseTags: false,
     // Don't change the attribute names so that stuff like `className` works correctly.
@@ -144,7 +144,7 @@ export default function MarkdownView(props: MarkdownViewProps): ReactElement {
     recognizeSelfClosing: true,
   });
 
-  return createElement('div', otherProps, root.map(mapElement));
+  return createElement('div', otherProps, root.childNodes.map(mapElement));
 }
 
 // Match react-dom omittedCloseTags. See also:

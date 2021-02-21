@@ -1,6 +1,6 @@
 {
-  "name": "react-showdown",
-  "version": "2.2.0",
+  "name": "@demitchell14/react-showdown",
+  "version": "2.2.1",
   "description": "Render React components within markdown and markdown as React components!",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -12,6 +12,9 @@
   ],
   "engines": {
     "node": ">=10"
+  },
+  "repository": {
+    "url": "git://github.com/demitchell14/react-showdown.git"
   },
   "scripts": {
     "start": "tsdx watch",
